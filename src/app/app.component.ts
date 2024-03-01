@@ -1,10 +1,16 @@
+
 import { Component } from '@angular/core';
+import { Person } from './card-display/card-display.component'; // Update the path accordingly
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'actualProj';
+  people: Person[] = [];
+
+  addPerson(newPerson: Person) {
+    this.people.push(newPerson);
+  }
 }

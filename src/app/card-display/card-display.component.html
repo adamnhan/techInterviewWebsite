@@ -1,0 +1,14 @@
+<div *ngFor="let person of people">
+  <mat-card class="card">
+    <mat-card-title class="card-title">{{ person.name }}</mat-card-title>
+    <mat-card-content>
+      Age: {{ person.age }} {{person.ageUnit}}
+      <br>
+      Student: {{ person.isStudent ? 'Yes' : 'No' }}
+      <br>
+      <span *ngIf="person.school">School: {{ person.school }}</span>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+  

@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+body {
+  background-image: linear-gradient(to right, #3F51B5, #009688);
+  min-height: 100vh; 
+  margin: 10; 
+  padding: 10px; 
+  font-family: Arial, sans-serif; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    min-height: 100vh;
+  }
+  
+  app-user-input-form {
+    width: 25%; 
+    padding-right: 20px; 
+  }
+  
+
+  .right-side-content {
+    flex-grow: 1;
+  }
+  
